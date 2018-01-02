@@ -7,6 +7,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 import { LoginService } from './services/login.service';
 import { UserService } from './services/user.service';
+import { PaymentService } from './services/payment.service';
+import { ShippingService } from './services/shipping.service';
 
 import { AppComponent } from './app.component';
 import {HomeComponent} from './components/home/home.component';
@@ -33,7 +35,7 @@ import 'hammerjs';
     BrowserAnimationsModule,
     routing
   ],
-  providers: [LoginService,UserService],
+  providers: [LoginService, UserService, PaymentService, ShippingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
